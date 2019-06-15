@@ -31,7 +31,5 @@ public class ControllingClass {
 		for (Person person : myPeople) {
 			System.out.println(person.toString());
 		}
-
 	}
-
 }
