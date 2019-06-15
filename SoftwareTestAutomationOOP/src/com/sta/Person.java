@@ -9,8 +9,8 @@ public class Person {
 	public boolean equals(Person person)
 	{
 		return (this.idNo == person.idNo
-				&& this.fName == person.fName
-				&& this.lName == person.lName
-				&& this.address == person.address);
+				&& this.fName.equals(person.fName)
+				&& this.lName.equals(person.lName)
+				&& this.address.equals(person.address));
 	}
 }
