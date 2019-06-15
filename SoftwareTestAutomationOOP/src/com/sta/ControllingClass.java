@@ -11,9 +11,15 @@ public class ControllingClass {
 		person1.idNo = 1234;
 		person1.fName = "Paul";
 		person1.lName = "Herron";
-		person1.address = "Derry, cooler than Gweedore";
+		person1.address = "Derry";
 		
-		System.out.println(person1.toString());
+		Person person2 = person1;
+		
+		if (person1 == person2) {
+			System.out.print("People are equal");
+		} else {
+			System.out.print("People are not equal");
+		}
 
 	}
 
