@@ -13,4 +13,9 @@ public class Person {
 				&& this.lName == person.lName
 				&& this.address == person.address);
 	}
+	
+	public String toString()
+	{
+		return String.format("%s,%s,%s,%s",this.idNo,this.fName,this.lName,this.address);
+	}
 }
