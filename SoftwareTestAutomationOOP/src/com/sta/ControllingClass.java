@@ -13,9 +13,17 @@ public class ControllingClass {
 		person1.lName = "Herron";
 		person1.address = "Derry, cooler than Gweedore";
 		
-		System.out.println(person1.fName);
-		System.out.println(person1.lName);
+		Person person2 = new Person();
+		person2.idNo = 1234;
+		person2.fName = "Paul";
+		person2.lName = "Herron";
+		person2.address = "Derry, cooler than Gweedore";
 		
+		if (person1.equals(person2)) {
+			System.out.println("people are equal");
+		} else {
+			System.out.println("people are not equal");
+		}
 	}
 
 }
