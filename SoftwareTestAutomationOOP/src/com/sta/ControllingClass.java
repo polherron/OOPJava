@@ -11,18 +11,22 @@ public class ControllingClass {
 			
 		ArrayList<Person> myPeople = new ArrayList<Person>();
 		Person person1 = new Person();
-		person1.idNo = 1234;
-		person1.fName = "Paul";
-		person1.lName = "Herron";
-		person1.address = "Derry";
+		person1.setIdNo(1234);
+		person1.setFName("Paul");
+		person1.setLName("Herron");
+		person1.setAddress("Derry");
+		person1.setGender(true);
+		person1.setEuCitizen(true);
 		
 		myPeople.add(person1);
 		
 		Person person2 = new Person();
-		person2.idNo = 12345;
-		person2.fName = "Michael";
-		person2.lName = "Doherty";
-		person2.address = "Dungloe";
+		person2.setIdNo(1235);
+		person2.setFName("Roisin");
+		person2.setLName("Gallagher");
+		person2.setAddress("Dungloe");
+		person2.setGender(false);
+		person2.setEuCitizen(true);
 		
 		myPeople.add(person2);
 		

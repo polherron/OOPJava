@@ -1,21 +1,77 @@
 package com.sta;
 
 public class Person {
-	public int idNo;
-	public String fName;
-	public String lName;
-	public String address;
+	
+	private int idNo;
+	private String fName;
+	private String lName;
+	private String address;
+	private boolean gender;
+	private boolean euCitizen;
+	
+	int getIdNo() {
+		return idNo;
+	}
+
+	void setIdNo(int idNo) {
+		this.idNo = idNo;
+	}
+
+	String getFName() {
+		return fName;
+	}
+
+	void setFName(String fName) {
+		this.fName = fName;
+	}
+
+	String getLName() {
+		return lName;
+	}
+
+	void setLName(String lName) {
+		this.lName = lName;
+	}
+
+	String getAddress() {
+		return address;
+	}
+
+	void setAddress(String address) {
+		this.address = address;
+	}
+
+	boolean isGender() {
+		return gender;
+	}
+
+	void setGender(boolean gender) {
+		this.gender = gender;
+	}
+
+	boolean isEuCitizen() {
+		return euCitizen;
+	}
+
+	void setEuCitizen(boolean euCitizen) {
+		this.euCitizen = euCitizen;
+	}
+
+
 	
 	public boolean equals(Person person)
 	{
 		return (this.idNo == person.idNo
 				&& this.fName.equals(person.fName)
 				&& this.lName.equals(person.lName)
-				&& this.address.equals(person.address));
+				&& this.address.equals(person.address)
+				&& this.gender == person.gender
+				&& this.euCitizen == person.euCitizen);
 	}
 	
 	public String toString()
 	{
-		return String.format("%s,%s,%s,%s",this.idNo,this.fName,this.lName,this.address);
+		return String.format("%s,%s,%s,%s,%s,%s",this.idNo,this.fName,
+				this.lName,this.address, this.gender, this.euCitizen);
 	}
 }
