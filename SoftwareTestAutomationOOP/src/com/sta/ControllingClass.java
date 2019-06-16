@@ -10,16 +10,11 @@ public class ControllingClass {
 	public static void main(String[] args) {
 			
 		ArrayList<Person> myPeople = new ArrayList<Person>();
-		Person person1 = new Person();
-		person1.setIdNo(1234);
-		person1.setFName("Paul");
-		person1.setLName("Herron");
-		person1.setAddress("Derry");
-		person1.setGender(true);
-		person1.setEuCitizen(true);
-		
+		//Using constructor
+		Person person1 = new Person(1234,"Paul","Herron","Derry",true,true);
 		myPeople.add(person1);
 		
+		//Example using empty constructor
 		Person person2 = new Person();
 		person2.setIdNo(1235);
 		person2.setFName("Roisin");

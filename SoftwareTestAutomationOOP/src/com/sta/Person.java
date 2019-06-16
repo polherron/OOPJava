@@ -9,6 +9,34 @@ public class Person {
 	private boolean gender;
 	private boolean euCitizen;
 	
+	/**
+	 * Empty Constructor
+	 */
+	public Person() {
+	}
+	
+	/**
+	 * @param idNo
+	 * @param fName
+	 * @param lName
+	 * @param address
+	 * @param gender
+	 * @param euCitizen
+	 */
+	public Person(int idNo, String fName, String lName, String address, 
+			boolean gender, boolean euCitizen) {
+		this.idNo = idNo;
+		this.fName = fName;
+		this.lName = lName;
+		this.address = address;
+		this.gender = gender;
+		this.euCitizen = euCitizen;
+	}
+
+
+	
+
+
 	int getIdNo() {
 		return idNo;
 	}
