@@ -1,12 +1,16 @@
 package com.sta;
 
 public class Person {
+	public enum sex {
+		  male,
+		  female
+		}
 	
 	private int idNo;
 	private String fName;
 	private String lName;
 	private String address;
-	private boolean gender;
+	private sex gender;
 	private boolean euCitizen;
 	
 	/**
@@ -24,7 +28,7 @@ public class Person {
 	 * @param euCitizen
 	 */
 	public Person(int idNo, String fName, String lName, String address, 
-			boolean gender, boolean euCitizen) {
+			sex gender, boolean euCitizen) {
 		this.idNo = idNo;
 		this.fName = fName;
 		this.lName = lName;
@@ -32,10 +36,6 @@ public class Person {
 		this.gender = gender;
 		this.euCitizen = euCitizen;
 	}
-
-
-	
-
 
 	int getIdNo() {
 		return idNo;
@@ -69,11 +69,11 @@ public class Person {
 		this.address = address;
 	}
 
-	boolean isGender() {
+	sex isGender() {
 		return gender;
 	}
 
-	void setGender(boolean gender) {
+	void setGender(sex gender) {
 		this.gender = gender;
 	}
 

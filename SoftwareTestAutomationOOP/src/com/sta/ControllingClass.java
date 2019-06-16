@@ -11,7 +11,7 @@ public class ControllingClass {
 			
 		ArrayList<Person> myPeople = new ArrayList<Person>();
 		//Using constructor
-		Person person1 = new Person(1234,"Paul","Herron","Derry",true,true);
+		Person person1 = new Person(1234,"Paul","Herron","Derry",Person.sex.male, true);
 		myPeople.add(person1);
 		
 		//Example using empty constructor
@@ -20,7 +20,7 @@ public class ControllingClass {
 		person2.setFName("Roisin");
 		person2.setLName("Gallagher");
 		person2.setAddress("Dungloe");
-		person2.setGender(false);
+		person2.setGender(Person.sex.female);
 		person2.setEuCitizen(true);
 		
 		myPeople.add(person2);
